@@ -1,1 +1,0 @@
-# konfig-generator-demo

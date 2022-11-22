@@ -45,7 +45,6 @@ paths:
     put:
       tags:
         - pet
-        - store
       summary: Update an existing pet
       description: ""
       operationId: updatePet
@@ -305,6 +304,7 @@ paths:
   /store/order:
     post:
       tags:
+        - pet
         - store
       summary: Place an order for a pet
       description: ""

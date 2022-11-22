@@ -305,6 +305,7 @@ paths:
     post:
       tags:
         - pet
+        - store
       summary: Place an order for a pet
       description: ""
       operationId: placeOrder

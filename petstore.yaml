@@ -45,6 +45,7 @@ paths:
     put:
       tags:
         - pet
+        - store
       summary: Update an existing pet
       description: ""
       operationId: updatePet
@@ -586,7 +587,7 @@ components:
             $ref: "#/components/schemas/Pet"
         application/xml:
           schema:
-            $ref: "#/components/schemas/Pet"
+            $ref: "#/components/schema/Pet"
       description: Pet object that needs to be added to the store
       required: true
   securitySchemes:
@@ -615,8 +616,8 @@ components:
           type: integer
           format: int64
         quantity:
-          type: integer
-          format: int32
+          type: string
+          example: "10"
         shipDate:
           type: string
           format: date-time

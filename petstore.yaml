@@ -305,7 +305,6 @@ paths:
     post:
       tags:
         - pet
-        - store
       summary: Place an order for a pet
       description: ""
       operationId: placeOrder
@@ -586,7 +585,7 @@ components:
             $ref: "#/components/schemas/Pet"
         application/xml:
           schema:
-            $ref: "#/components/schema/Pet"
+            $ref: "#/components/schemas/Pet"
       description: Pet object that needs to be added to the store
       required: true
   securitySchemes:
